@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+  
+    <form method="POST">
+        {% csrf_token %}
+        <h1> <B><I><U><p style="color:rgb(8,8,8)" align="center"> PREDICTION OF  DIFFERENT GLASS TYPE </p></c></U></I></B></h1>
+        <style>
+            body{
+                background-image: url("https://tse2.mm.bing.net/th?id=OIP.xzTRZHJAnfIuz8qX2Z1mkQHaEo&pid=Api&P=0&h=180");
+                height:100vh;
+                background-size:cover;
+                background-position: center;
+            }
+        </style>
+    <TABLE class="table-striped" align="center" width="800">
+        <tr>
+            <TD>
+               <h2><b><p style="color:rgb(8, 8, 8)">RI</p></b></h2> 
+            </TD>
+            <TD>
+                <INPUT TYPE="TEXT" NAME="TXTRI" class="btn btn-secondary" width="100">
+            </TD>
+        </tr>
+        <tr>
+            <TD>
+               <h2><p style="color:rgb(8, 8, 8)">Na</p> </h2>
+            </TD>
+            <TD>
+                <INPUT TYPE="FLOAT" NAME="TXTNa" class="btn btn-secondary">
+            </TD>
+        </tr>
+        <tr>
+            <TD>
+               <h2> <p style="color:rgb(8,8,8)">Mg</p></h2>
+            </TD>
+            <TD>
+                <INPUT TYPE="FLOAT" NAME="TXTMg" class="btn btn-secondary">
+            </TD>
+        </tr>
+        <tr>
+            <TD>
+                <h2><p style="color:rgb(8,8,8)">Al</p> </h2>
+            </TD>
+            <TD>
+                <INPUT TYPE="FLOAT" NAME="TXTAl" class="btn btn-secondary">
+            </TD>
+        </tr>
+        <tr>
+            <TD>
+               <h2> <p style="color:rgb(8,8,8)">Si</p> </h2>
+            </TD>
+            <TD>
+                <INPUT TYPE="TEXT" NAME="TXTSi" class="btn btn-secondary">
+            </TD>
+        </tr>
+        <tr>
+            <TD>
+                <h2><p style="color:rgb(8,8,8)">K</p></h2>
+            </TD>
+            <TD>
+                <INPUT TYPE="TEXT" NAME="TXTK" class="btn btn-secondary">
+            </TD>
+        </tr>
+        <tr>
+            <TD>
+                <h2><p style="color:rgb(8,8,8)">Ca</p></h2>
+            </TD>
+            <TD>
+                <INPUT TYPE="TEXT" NAME="TXTCa" class="btn btn-secondary">
+            </TD>
+        </tr>
+        <tr>
+            <TD>
+                <h2><p style="color:rgb(8,8,8)">Ba</p></h2>
+            </TD>
+            <TD>
+                <INPUT TYPE="TEXT" NAME="TXTBa" class="btn btn-secondary">
+            </TD>
+        </tr>
+        <tr>
+            <TD>
+                <h2><p style="color:rgb(8,8,8)">Fe</p></h2>
+            </TD>
+            <TD>
+                <INPUT TYPE="TEXT" NAME="TXTFe" class="btn btn-secondary">
+            </TD>
+        </tr>
+            <TD>
+                <center>
+                <button type="submit" NAME="SUBMIT"class="btn btn-primary">PREDICTION</button> 
+            </center>
+            </TD>
+          
+        
+    </table>
+    <td>
+        <center>
+        <p style="color:rgb(8,8,8)">
+        {{ op }}
+        </p>
+    </center>
+    </td>
+    </form>
+    </html>
